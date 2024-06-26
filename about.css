@@ -1,0 +1,140 @@
+/* CSS for About Section */
+.about {
+    padding: 80px 0;
+    padding-top: 15vh;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.about h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.about ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.about ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.about ul li:before {
+    content: "\2022"; /* Bullet character */
+    color: #007bff; /* Bullet color */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.about .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px; /* Added padding for better responsiveness */
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #777;
+}
+
+.about .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.about .box {
+    flex: 1 1 calc(33.33% - 20px); /* Adjusted flex basis for responsive grid */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.about .box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about .box p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.about .box .share {
+    margin-top: 20px;
+}
+
+.about .box .share a {
+    color: #777;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.about .box .share a:hover {
+    color: #007bff;
+}
+
+.about .box .link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about .box .link:hover {
+    color: #0056b3;
+}
+
+.about .profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .about .box {
+        flex: 1 1 calc(50% - 20px); /* Two columns on larger tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .about .box {
+        flex: 1 1 calc(100% - 20px); /* Single column on tablets and smaller devices */
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about h2 {
+        font-size: 2rem; /* Adjusted heading size for smaller screens */
+    }
+
+    .about h3 {
+        font-size: 1.5rem; /* Adjusted subheading size for smaller screens */
+    }
+}
